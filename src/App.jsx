@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./Header";
+import Filters from "./Filters";
 import "./App.css";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Header />
+      <Filters />
       <button onClick={() => setCount((count) => count + 1)}>
         count is {count}
       </button>

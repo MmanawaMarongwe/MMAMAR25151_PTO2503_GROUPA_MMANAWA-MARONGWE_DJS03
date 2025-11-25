@@ -30,6 +30,29 @@ h1 {
   color: var(--text);
 }
 
+img {
+  border-radius: 8px;
+}
+
+label {
+  font-size: 20px;
+  color: var(--text);
+}
+
+select {
+  position: relative;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0px 8px;
+}
+
+option {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+}
+
 .app-identity {
   display: flex;
   flex-direction: rows;
@@ -57,4 +80,10 @@ h1 {
 .search-icon,
 .profile-pic {
   width: 48px;
+}
+
+.filter-area {
+  position: relative;
+  margin-top: 24px;
+  margin-left: 16px;
 }
