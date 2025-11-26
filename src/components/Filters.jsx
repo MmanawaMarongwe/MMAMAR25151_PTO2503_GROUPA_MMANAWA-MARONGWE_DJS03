@@ -1,7 +1,7 @@
 export default function Filters() {
   return (
-    <section class="filter-area">
-      <label for="genre-options">Filter by:</label>
+    <section className="filter-area">
+      <label htmlFor="genre-options">Filter by:</label>
       <select name="genre" id="genre-options">
         <option value="All Genres">All Genres</option>
       </select>

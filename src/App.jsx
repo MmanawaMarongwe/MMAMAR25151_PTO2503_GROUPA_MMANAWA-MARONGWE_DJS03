@@ -1,18 +1,13 @@
 import { useState } from "react";
-import Header from "./Header";
-import Filters from "./Filters";
+import Header from "./components/Header";
+import Filters from "./components/Filters";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Header />
       <Filters />
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
     </>
   );
 }
