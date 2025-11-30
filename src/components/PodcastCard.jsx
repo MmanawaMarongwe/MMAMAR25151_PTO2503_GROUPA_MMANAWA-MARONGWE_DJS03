@@ -11,7 +11,7 @@ export default function PodcastCard({ title, image, seasons, updated }) {
           Placeholder
         </div>
         <p id="updated" className="text-muted">
-          {updated}
+          Updated {updated}
         </p>
       </div>
     </div>

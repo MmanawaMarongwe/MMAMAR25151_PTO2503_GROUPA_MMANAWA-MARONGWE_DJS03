@@ -1,4 +1,5 @@
 import PodcastCard from "./PodcastCard";
+import { dateFormat } from "../utils/dateFormat.js";
 
 export default function PodcastGrid({ podcasts = [] }) {
   console.log("PodcastGrid podcasts:", podcasts);
@@ -9,7 +10,7 @@ export default function PodcastGrid({ podcasts = [] }) {
         title={podcast.title}
         image={podcast.image}
         seasons={podcast.seasons}
-        updated={podcast.updated}
+        updated={dateFormat(podcast.updated)}
       />
     );
   });
