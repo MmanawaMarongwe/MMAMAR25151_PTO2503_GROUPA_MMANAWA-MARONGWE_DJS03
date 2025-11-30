@@ -1,4 +1,10 @@
-export default function PodcastCard({ title, image, seasons, updated }) {
+export default function PodcastCard({
+  title,
+  image,
+  seasons,
+  genres = [],
+  updated,
+}) {
   return (
     <div className="card">
       <img src={image} className="pod-cover" alt="" />
@@ -8,7 +14,11 @@ export default function PodcastCard({ title, image, seasons, updated }) {
           ♡ {seasons} Seasons
         </p>
         <div id="genres" className="genre-tags">
-          Placeholder
+          {genres.map((genre) => (
+            <span key={genre} className="genre-pill">
+              {genre}
+            </span>
+          ))}
         </div>
         <p id="updated" className="text-muted">
           Updated {updated}
