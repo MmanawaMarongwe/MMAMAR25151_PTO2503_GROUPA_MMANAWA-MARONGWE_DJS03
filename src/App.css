@@ -1,4 +1,33 @@
+:root {
+  --bg: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+  --card-bg: linear-gradient(180deg, #1a1f27 0%, #202833 100%);
+  --text: #ffffff;
+  --text-muted: #9ba1ae;
+  --border-line: rgba(128, 128, 128, 0.278);
+  --accent: #ff9f3f;
+}
+
 #root {
   max-width: 1280px;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px;
+}
+
+.text-muted {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.pod-cover {
+  width: 250px;
+}
+
+.seasons-text {
+  color: var(--accent);
 }

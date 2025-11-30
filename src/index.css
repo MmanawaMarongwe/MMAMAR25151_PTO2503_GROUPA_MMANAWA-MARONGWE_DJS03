@@ -85,5 +85,21 @@ option {
 .filter-area {
   position: relative;
   margin-top: 24px;
-  margin-left: 16px;
+  margin-left: 32px;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px;
+}
+
+.text-muted {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.pod-cover {
+  width: 250px;
 }

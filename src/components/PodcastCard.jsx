@@ -5,7 +5,7 @@ export default function PodcastCard({ title, image, seasons, updated }) {
       <div>
         <h4 id="title">{title}</h4>
         <p id="seasons" className="seasons-text">
-          {seasons}
+          ♡ {seasons} Seasons
         </p>
         <div id="genres" className="genre-tags">
           Placeholder
