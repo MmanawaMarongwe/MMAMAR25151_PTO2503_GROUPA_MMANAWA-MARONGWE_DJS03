@@ -1,3 +1,15 @@
+/**
+ * Simple presentational card for a single podcast.
+ *
+ * @param {Object} props
+ * @param {string} props.title - Podcast title.
+ * @param {string} props.image - Cover image URL.
+ * @param {number} props.seasons - Number of seasons.
+ * @param {string[]} [props.genres] - Genre names to display as pills.
+ * @param {string} props.updated - Last updated label (e.g. "2 days ago").
+ * @returns {JSX.Element} Podcast card UI.
+ */
+
 export default function PodcastCard({
   title,
   image,
